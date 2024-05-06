@@ -1,0 +1,26 @@
+import service.CourseService;
+
+public class Main {
+    public static void main(String[] args) {
+
+        CourseService courseService = new CourseService();
+
+        String courseId = "biol_01";
+        String courseId2 = "phys_01";
+        String courseId3 = "art_01";
+        String studentId = "778979";
+
+
+        courseService.enrollStudent(studentId, courseId);
+        courseService.enrollStudent(studentId, courseId2);
+        courseService.enrollStudent(studentId, courseId3);
+
+        // Get the student and the course(s) that the student has taken
+        courseService.displayStudentCourseInformation(studentId );
+        courseService.displayTotalStudentCredits(studentId);
+
+//        courseService.displayStudentInformation(studentId);
+//        courseService.displayCourseInformation(courseId);
+
+    }
+}
