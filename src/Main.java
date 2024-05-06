@@ -16,7 +16,7 @@ public class Main {
         courseService.enrollStudent(studentId, courseId3);
 
         // Get the student and the course(s) that the student has taken
-        courseService.displayStudentCourseInformation(studentId );
+        courseService.displayStudentCourseInformation(studentId);
         courseService.displayTotalStudentCredits(studentId);
 
 //        courseService.displayStudentInformation(studentId);
